@@ -55,3 +55,14 @@ def lowest_grade(grades):
         return 0
 
     return min(grades.values())
+
+# pass or fail status
+PASSING_GRADE = 75
+
+def pass_fail_status(grades):
+    average = compute_average(grades)
+
+    if average >= PASSING_GRADE:
+        return "PASSED"
+    else:
+        return "FAILED"
