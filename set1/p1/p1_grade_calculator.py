@@ -66,3 +66,27 @@ def pass_fail_status(grades):
         return "PASSED"
     else:
         return "FAILED"
+
+# display all student grade results
+def display_results(grades):
+    if not grades:
+        print("No grades available. Please enter grades first.")
+        return
+
+    average = compute_average(grades)
+    status = pass_fail_status(grades)
+
+    print("\n===== STUDENT GRADE RESULTS =====")
+
+    print(f"Your average grade is: {average:.2f}")
+    print(f"Your highest grade is: {highest_grade(grades):.2f}")
+    print(f"Your lowest grade is: {lowest_grade(grades):.2f}")
+
+    print("\n===== FINAL RESULT =====")
+
+    if status == "PASSED":
+        print("Congratulations! You passed!")
+        print("Keep up the good work!")
+    else:
+        print("Unfortunately, you did not meet the passing grade.")
+        print("Don't give up! Keep improving!")    
