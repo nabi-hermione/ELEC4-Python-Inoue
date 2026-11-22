@@ -117,7 +117,17 @@ def main():
         else:
             print("Invalid choice. Please select 1, 2, or 3.")
 
-
 if __name__ == "__main__":
     main()
-    
+
+# Ang local variable ay dinedeclare sa loob ng function at ma-access sa loob lang ng function na iyon,
+# example yung sa main() function ang student_grades is local variable since sa loob siya dineclare 
+# at pwede i-access sa loob ng function na iyon.
+# Kapag global variable naman ay kabaliktaran ng local since
+# si local sa loob siya ng function si global sa labas ng function coming from the world itself global 
+# so pwede siya ma-access ng ibang functions. 
+# Example is yung SUBJECTS ay isa siyang global variable kasi asa labas niya ng function pero na-access siya ng get-grades() function
+# same sa PASSING_GRADE variable nasa labas din ng function pero na-access ng pass_fail_status() function. 
+# In summary, local variable sa loob ng isang function dinedeclare at dun lang din pwede ma-access bawal ma-access ng
+# ibang function ang variable na yun, kapag global naman sa labas ng function dinedeclare at 
+# pwede ma-access ng iba't-ibang function.
