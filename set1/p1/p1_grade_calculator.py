@@ -17,7 +17,7 @@ def get_grades():
     grades = {}
 
     # ask for a grade for each subject
-    print("===== ENTER YOUR GRADE FOR EACH SUBJECT =====")
+    print("\n===== ENTER YOUR GRADE FOR EACH SUBJECT =====")
 
     for subject in SUBJECTS:
         while True:
@@ -89,4 +89,35 @@ def display_results(grades):
         print("Keep up the good work!")
     else:
         print("Unfortunately, you did not meet the passing grade.")
-        print("Don't give up! Keep improving!")    
+        print("Don't give up! Keep improving!")
+
+# Main menu
+def main():
+    student_grades = {}
+
+    while True:
+        print("\n===== MENU =====")
+        print("[1] Enter Grades")
+        print("[2] View Results")
+        print("[3] Exit")
+
+        choice = input("Enter your choice (1-3): ")
+
+        if choice == "1":
+            student_grades = get_grades()
+            print("\nGrades successfully entered!")
+
+        elif choice == "2":
+            display_results(student_grades)
+
+        elif choice == "3":
+            print("\nThank you for using Student Grade Calculator!")
+            break
+
+        else:
+            print("Invalid choice. Please select 1, 2, or 3.")
+
+
+if __name__ == "__main__":
+    main()
+    
