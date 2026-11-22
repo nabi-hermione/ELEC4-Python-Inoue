@@ -48,3 +48,10 @@ def highest_grade(grades):
         return 0
 
     return max(grades.values())
+
+# get the lowest grade
+def lowest_grade(grades):
+    if not grades:
+        return 0
+
+    return min(grades.values())
