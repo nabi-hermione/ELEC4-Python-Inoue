@@ -41,3 +41,10 @@ def compute_average(grades):
         return 0
 
     return sum(grades.values()) / len(grades)
+
+# get the highest grade
+def highest_grade(grades):
+    if not grades:
+        return 0
+
+    return max(grades.values())
