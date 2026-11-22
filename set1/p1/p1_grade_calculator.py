@@ -35,4 +35,9 @@ def get_grades():
 
     return grades
 
+# compute the average grade
+def compute_average(grades):
+    if not grades:
+        return 0
 
+    return sum(grades.values()) / len(grades)
