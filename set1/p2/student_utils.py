@@ -20,3 +20,17 @@ def check_pass(grades):
         return "PASSED"
     else:
         return "FAILED"
+
+# get highest grade
+def get_highest_grade(grades):
+    if not grades:
+        return 0
+
+    return max(grades.values())
+
+# get lowest grade
+def get_lowest_grade(grades):
+    if not grades:
+        return 0
+
+    return min(grades.values())
