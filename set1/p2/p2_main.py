@@ -3,6 +3,7 @@
 # Activity: Set 1 - P2 Custom Module: student_utils
 # Date: November 27, 2026
 
+import datetime
 import student_utils
 from student_utils import calc_average
 
@@ -52,6 +53,8 @@ def main():
         print("Unfortunately, you did not meet the passing grade.")
         print("Don't give up! Keep improving!")    
 
+    print("\n===== REPORT DATE GENERATED =====")
+    print(datetime.datetime.now().strftime("%B %d, %Y %I:%M %p"))
 
 if __name__ == "__main__":
     main()
