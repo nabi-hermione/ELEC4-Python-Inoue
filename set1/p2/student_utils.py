@@ -11,3 +11,12 @@ def calc_average(grades):
         return 0
 
     return sum(grades.values()) / len(grades)
+
+# check pass or fail
+def check_pass(grades):
+    average = calc_average(grades)
+
+    if average >= PASSING_GRADE:
+        return "PASSED"
+    else:
+        return "FAILED"
