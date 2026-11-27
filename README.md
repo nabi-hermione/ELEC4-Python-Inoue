@@ -1,4 +1,3 @@
-
 # ELEC 4 – Python Programming Activities
 
 ## Prepared By:
