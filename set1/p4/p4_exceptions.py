@@ -46,3 +46,27 @@ def read_file():
         print("\n===== FILE CONTENTS =====")
         print(content)
         print("File reading operation completed.")
+
+# display menu and handle user choices
+def main():
+    while True:
+        print("\n===== SAFE MENU PROGRAM =====")
+        print("1. Divide Numbers")
+        print("2. Open File")
+        print("3. Exit")
+
+        choice = input("Enter your choice (1-3): ").strip()
+
+        if choice == "1":
+            divide_numbers()
+        elif choice == "2":
+            read_file()
+        elif choice == "3":
+            print("Thank you for using the program!")
+            break
+        else:
+            print("Invalid choice. Please select from 1 to 3.")
+
+# run main function when file is executed directly
+if __name__ == "__main__":
+    main()
