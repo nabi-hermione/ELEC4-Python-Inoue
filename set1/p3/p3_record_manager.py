@@ -74,3 +74,50 @@ def search_student():
         print(f"Total matches: {len(matches)}")
     else:
         print("No matching student found.")
+
+# display all students
+def display_students():
+    if not students:
+        print("No students registered yet.")
+        return
+
+    # sorts student names alphabetically
+    sorted_students = sorted(students, key=str.casefold)
+
+    print("\n===== STUDENT LIST =====")
+
+    for number, student in enumerate(sorted_students, start=1):
+        print(f"{number}. {student}")
+
+    # displays the total number of students
+    print(f"\nTotal students: {len(students)}")
+
+# display menu and handle user choices
+def main():
+    while True:
+        print("\n===== STUDENT RECORD MANAGER =====")
+        print("1. Add Student")
+        print("2. Remove Student")
+        print("3. Search Student")
+        print("4. Display All Students")
+        print("5. Exit")
+
+        choice = input("Enter your choice (1-5): ").strip()
+
+        if choice == "1":
+            add_student()
+        elif choice == "2":
+            remove_student()
+        elif choice == "3":
+            search_student()
+        elif choice == "4":
+            display_students()
+        elif choice == "5":
+            print("Thank you for using Student Record Manager!")
+            break
+        else:
+            print("Invalid choice. Please select from 1 to 5.")
+
+# run the main function
+if __name__ == "__main__":
+    main()
