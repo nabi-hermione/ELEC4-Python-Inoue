@@ -70,3 +70,17 @@ def main():
 # run main function when file is executed directly
 if __name__ == "__main__":
     main()
+
+# Ang exception handling ay ginagamit para ma-handle ang mga errors na maaaring mangyari
+# habang tumatakbo ang program para hindi basta mag-stop kapag may invalid na input.
+# Ang try block ay kung saan nilalagay yung code na posibleng magkaroon ng error.
+# Kapag may letters or invalid na number na in-enter ang user, ang ValueError ang magha-handle nito.
+# Kapag naman nag-enter ng zero sa second number during division, ZeroDivisionError ang magha-handle.
+# Sa file reading naman, kapag hindi makita yung file na hinahanap ng user,
+# FileNotFoundError ang magbibigay ng error message.
+# Ang except ay ginagamit para mahuli at ma-handle yung specific error.
+# Kapag else naman, ie-execute lang ito kapag walang error na nangyari sa try block.
+# Ang finally ay laging nage-execute kahit may error or wala.
+# In summary, ang exception handling ay tumutulong para maging maayos ang takbo ng program
+# kahit may maling input or missing file. Instead na mag-crash agad ang program,
+# nagbibigay ito ng appropriate error message and allows the user to continue.
