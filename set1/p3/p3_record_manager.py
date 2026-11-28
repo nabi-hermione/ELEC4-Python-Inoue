@@ -121,3 +121,12 @@ def main():
 # run the main function
 if __name__ == "__main__":
     main()
+
+# Ang list ay ginagamit para mag-store ng maraming student names and to maintain ang pagkaka-ayos
+# kung paano sila nilagay sa program, example is yung students na list kung saan
+# naka-store lahat ng name ng students na ina-add ng user.
+# Kapag set naman ay ginagamit ito para mag-store ng unique values, meaning hindi dapat
+# magkaroon ng duplicate entries example is yung student_set ang ginamit para
+# malaman kung existing na ba yung name na gustong idagdag ng user.
+# In summary, ang list ay ginagamit para i-store at i-display ang student names,
+# habang ang set naman ay ginagamit para maiwasan ang duplicate names sa program.
