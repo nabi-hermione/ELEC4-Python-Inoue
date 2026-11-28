@@ -3,6 +3,7 @@
 # Activity: Set 1 - P2: Custom Module: student_utils
 # Date: November 27, 2026
 
+# passing grade requirement
 PASSING_GRADE = 75
 
 # calculate average
