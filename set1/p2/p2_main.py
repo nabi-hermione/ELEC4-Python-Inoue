@@ -1,6 +1,6 @@
 # Full Name: Kate Diane Inoue
 # Section: IV-BSIT B
-# Activity: Set 1 - P2 Custom Module: student_utils
+# Activity: Set 1 - P2: Custom Module: student_utils
 # Date: November 27, 2026
 
 # import built-in and custom modules
