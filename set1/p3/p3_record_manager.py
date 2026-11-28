@@ -26,3 +26,51 @@ def add_student():
         students.append(name)
         student_set.add(name_key)
         print(f"{name} has been added successfully.")
+
+# remove a student
+def remove_student():
+    name = input("Enter student name to remove: ").strip()
+
+    if not name:
+        print("Student name cannot be empty.")
+        return
+
+    # checks the name without case differences
+    name_key = name.casefold()
+
+    if name_key in student_set:
+        for student in students:
+            if student.casefold() == name_key:
+                students.remove(student)
+                break
+
+        student_set.remove(name_key)
+        print(f"{name} has been removed successfully.")
+    else:
+        print("Student not found.")
+
+# search for a student
+def search_student():
+    search_name = input("Enter student name to search: ").strip()
+
+    if not search_name:
+        print("Please enter a name to search.")
+        return
+
+    # allows partial and case-insensitive searching
+    search_key = search_name.casefold()
+
+    matches = [
+        student for student in students
+        if search_key in student.casefold()
+    ]
+
+    if matches:
+        print("\n===== SEARCH RESULTS =====")
+
+        for student in matches:
+            print(student)
+
+        print(f"Total matches: {len(matches)}")
+    else:
+        print("No matching student found.")
