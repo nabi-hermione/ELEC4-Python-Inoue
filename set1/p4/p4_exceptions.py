@@ -30,3 +30,19 @@ def divide_numbers():
 
     finally:
         print("Division operation completed.")
+
+# read and display file contents
+def read_file():
+    file_name = input("Enter file name: ").strip()
+
+    try:
+        with open(file_name, "r", encoding="utf-8") as file:
+            content = file.read()
+
+    except FileNotFoundError:
+        print("File not found. Please check the file name.")
+
+    else:
+        print("\n===== FILE CONTENTS =====")
+        print(content)
+        print("File reading operation completed.")
