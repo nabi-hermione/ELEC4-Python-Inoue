@@ -1,6 +1,6 @@
 # Full Name: Kate Diane Inoue
 # Section: IV-BSIT B
-# Activity: Set 1 - P3 Student Record Manager
+# Activity: Set 1 - P3: Student Record Manager
 # Date: November 28, 2026
 
 # stores student names
